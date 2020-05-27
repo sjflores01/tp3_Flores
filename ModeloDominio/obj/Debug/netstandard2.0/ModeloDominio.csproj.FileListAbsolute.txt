@@ -1,0 +1,16 @@
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\bin\Debug\netstandard2.0\ModeloDominio.deps.json
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\bin\Debug\netstandard2.0\ModeloDominio.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\bin\Debug\netstandard2.0\ModeloDominio.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.csprojAssemblyReference.cache
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.AssemblyInfoInputs.cache
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.AssemblyInfo.cs
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\bin\Debug\netstandard2.0\ModeloDominio.deps.json
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\bin\Debug\netstandard2.0\ModeloDominio.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\bin\Debug\netstandard2.0\ModeloDominio.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.csprojAssemblyReference.cache
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.AssemblyInfoInputs.cache
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.AssemblyInfo.cs
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\ModeloDominio\obj\Debug\netstandard2.0\ModeloDominio.pdb

@@ -1,0 +1,16 @@
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\bin\Debug\Controlador.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\bin\Debug\Controlador.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\bin\Debug\ModeloDominio.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\bin\Debug\ModeloDominio.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\obj\Debug\Negocio.csprojAssemblyReference.cache
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\obj\Debug\Negocio.csproj.CopyComplete
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\obj\Debug\Controlador.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP2\tp2_Flores\Controlador\obj\Debug\Controlador.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\bin\Debug\Controlador.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\bin\Debug\Controlador.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\bin\Debug\ModeloDominio.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\bin\Debug\ModeloDominio.pdb
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\obj\Debug\Negocio.csprojAssemblyReference.cache
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\obj\Debug\Negocio.csproj.CopyComplete
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\obj\Debug\Controlador.dll
+D:\Santi\Personal\Programacion\2020\Programacion 3\TP3_Flores\tp3_Flores\Controlador\obj\Debug\Controlador.pdb
