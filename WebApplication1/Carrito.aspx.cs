@@ -44,7 +44,11 @@ namespace WebApplication1
                     lblTextPrecio.Visible = true;
                     lblPrecioFinal.Visible = true;
 
+                    if (Request.QueryString["cant"] == null)
+                    {
                     listaCarro = carroNegocio.EliminarArticulo(listaCarro,Request.QueryString["cArt"]);
+                    }
+                    listaCarro = carroNegocio.ModificarCantidad(listaCarro, Request.QueryString["cArt"], Request.QueryString["cant"]);
                     lblPrecioFinal.Text = carroNegocio.SumarImporte(listaCarro).ToString("F2");
                     Session["listaCarro"] = listaCarro;
                 }

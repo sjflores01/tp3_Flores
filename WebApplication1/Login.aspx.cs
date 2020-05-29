@@ -21,7 +21,7 @@ namespace WebApplication1
             if (txtBoxUsuario.Text == "" ||
                 txtBoxContraseña.Text == "")
             {
-                Response.Write("<div class='alert alert - danger' role='alert'>Complete todos los campos</div>");
+                lblCompletar.Visible = true;
             }
             else
             {

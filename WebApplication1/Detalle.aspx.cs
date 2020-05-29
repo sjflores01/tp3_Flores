@@ -17,7 +17,7 @@ namespace WebApplication1
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             List<Articulo> lista;
-            
+
             try
             {
                 lista = articuloNegocio.Listar();
@@ -35,25 +35,33 @@ namespace WebApplication1
 
         protected void btnAgregarArticulo_Click(object sender, EventArgs e)
         {
-            CarroNegocio carroNegocio = new CarroNegocio();
-            Carro item = new Carro();
-            List<Carro> listaCarro = new List<Carro>();
-
-            item = carroNegocio.AgregarItem(articulo);
-            item.Cantidad = Convert.ToInt32(txtBoxCantidad.Text);
-
-            if(Session["listaCarro"] != null)
+            if(txtBoxCantidad.Text == "" ||
+                !int.TryParse(txtBoxCantidad.Text, out int result))
             {
-                listaCarro = (List<Carro>)Session["listaCarro"];
-                Session["listaCarro"] = carroNegocio.CargarLista(listaCarro, item);
+                lblCompletar.Visible = true;
             }
             else
             {
-                listaCarro.Add(item);
-                Session["listaCarro"] = listaCarro;
-            }
 
-            Response.Redirect("Home.aspx");
+                CarroNegocio carroNegocio = new CarroNegocio();
+                Carro item = new Carro();
+                List<Carro> listaCarro = new List<Carro>();
+
+                item = carroNegocio.AgregarItem(articulo);
+                item.Cantidad = Convert.ToInt32(txtBoxCantidad.Text);
+
+                if (Session["listaCarro"] != null)
+                {
+                    listaCarro = (List<Carro>)Session["listaCarro"];
+                    Session["listaCarro"] = carroNegocio.CargarLista(listaCarro, item);
+                }
+                else
+                {
+                    listaCarro.Add(item);
+                    Session["listaCarro"] = listaCarro;
+                }
+                Response.Redirect("Home.aspx");
+            }
         }
     }
 }

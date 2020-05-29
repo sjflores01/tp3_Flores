@@ -16,13 +16,13 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            if (IsPostBack)
+            string search = txtBoxBuscar.Text;
+
+            if (search != null && search != "")
             {
-                if (txtBoxBuscar.Text != "")
-                {
-                    listaArticulos = articuloNegocio.Listar();
-                    listaArticulos = listaArticulos.FindAll(A => A.Nombre.ToLower() == txtBoxBuscar.Text.ToLower());
-                }
+                listaArticulos = articuloNegocio.Listar();
+                listaArticulos = listaArticulos.FindAll(A => A.Nombre.ToLower().Contains(search.ToLower())  ||
+                                                                A.Marca.Descripcion.ToLower().Contains(search.ToLower()));
             }
             else
             {
@@ -37,14 +37,7 @@ namespace WebApplication1
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Response.Redirect("Home.aspx");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            
         }
     }
 }

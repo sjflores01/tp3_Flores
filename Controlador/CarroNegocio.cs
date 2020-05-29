@@ -58,6 +58,38 @@ namespace Negocio
             return result;
         }
 
+        public List<Carro> ModificarCantidad(List<Carro> listaCarro, string codigo, string operacion)
+        {
+            if(operacion == "resta")
+            {
+                foreach (var item in listaCarro)
+                {
+                    if(item.Codigo == codigo)
+                    {
+                        item.Cantidad--;
+                        if(item.Cantidad == 0)
+                        {
+                            listaCarro = EliminarArticulo(listaCarro, item.Codigo);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            if (operacion == "suma")
+            {
+                foreach (var item in listaCarro)
+                {
+                    if (item.Codigo == codigo)
+                    {
+                        item.Cantidad++;
+                    }
+                }
+            }
+
+            return listaCarro;
+        }
+
         public List<Carro> EliminarArticulo(List<Carro> listaCarro, string codigo)
         {
             foreach (var item in listaCarro)
