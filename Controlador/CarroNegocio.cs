@@ -27,21 +27,16 @@ namespace Negocio
 
         public List<Carro> CargarLista(List<Carro> lista, Carro item)
         {
-            bool banItem = false;
-
-            foreach(Carro producto in lista)
+            foreach (Carro producto in lista)
             {
-                if(producto.Codigo == item.Codigo)
+                if (producto.Codigo == item.Codigo)
                 {
                     producto.Cantidad += item.Cantidad;
-                    banItem = true;
+                    return lista;
                 }
             }
 
-            if (!banItem)
-            {
-                lista.Add(item);
-            }
+            lista.Add(item);
 
             return lista;
         }
@@ -60,14 +55,14 @@ namespace Negocio
 
         public List<Carro> ModificarCantidad(List<Carro> listaCarro, string codigo, string operacion)
         {
-            if(operacion == "resta")
+            if (operacion == "resta")
             {
                 foreach (var item in listaCarro)
                 {
-                    if(item.Codigo == codigo)
+                    if (item.Codigo == codigo)
                     {
                         item.Cantidad--;
-                        if(item.Cantidad == 0)
+                        if (item.Cantidad == 0)
                         {
                             listaCarro = EliminarArticulo(listaCarro, item.Codigo);
                             break;
@@ -94,7 +89,7 @@ namespace Negocio
         {
             foreach (var item in listaCarro)
             {
-                if(item.Codigo == codigo)
+                if (item.Codigo == codigo)
                 {
                     listaCarro.Remove(item);
                     break;

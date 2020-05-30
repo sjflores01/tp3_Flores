@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\TP3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj": {}
+    "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\tp3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj": {}
   },
   "projects": {
-    "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\TP3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj": {
+    "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\tp3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\TP3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj",
+        "projectUniqueName": "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\tp3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj",
         "projectName": "ModeloDominio",
-        "projectPath": "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\TP3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj",
+        "projectPath": "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\tp3_Flores\\tp3_Flores\\ModeloDominio\\ModeloDominio.csproj",
         "packagesPath": "C:\\Users\\mrdes\\.nuget\\packages\\",
-        "outputPath": "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\TP3_Flores\\tp3_Flores\\ModeloDominio\\obj\\",
+        "outputPath": "D:\\Santi\\Personal\\Programacion\\2020\\Programacion 3\\tp3_Flores\\tp3_Flores\\ModeloDominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mrdes\\AppData\\Roaming\\NuGet\\NuGet.Config",

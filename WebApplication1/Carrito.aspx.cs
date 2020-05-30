@@ -18,41 +18,46 @@ namespace WebApplication1
             try
             {
                 CarroNegocio carroNegocio = new CarroNegocio();
-                if (Session[Session.SessionID + "nombreUsuario"] != null)
-                {
-                    lblBienvenida.Text += Session[Session.SessionID + "nombreUsuario"].ToString();
-                }
-                else
-                {
-                    Response.Redirect("Login.aspx");
-                }
-
-                if (Session["listaCarro"] != null)
-                {
-                    listaCarro = (List<Carro>)Session["listaCarro"];
-                }
-                else
-                {
-                    listaCarro = new List<Carro>();
-                    Session["listaCarro"] = listaCarro;
-                }
+                listaCarro = new List<Carro>();
 
 
-                if (listaCarro.Count > 0)
+                if (Session["nombreUsuario"] != null)
                 {
-                    lblCarritoVacio.Visible = false;
-                    lblTextPrecio.Visible = true;
-                    lblPrecioFinal.Visible = true;
-
-                    if (Request.QueryString["cant"] == null)
+                    lblBienvenida.Text += Session["nombreUsuario"].ToString();
+                    if (Session["listaCarro"] != null)
                     {
-                    listaCarro = carroNegocio.EliminarArticulo(listaCarro,Request.QueryString["cArt"]);
+                        listaCarro = (List<Carro>)Session["listaCarro"];
                     }
-                    listaCarro = carroNegocio.ModificarCantidad(listaCarro, Request.QueryString["cArt"], Request.QueryString["cant"]);
-                    lblPrecioFinal.Text = carroNegocio.SumarImporte(listaCarro).ToString("F2");
-                    Session["listaCarro"] = listaCarro;
+                    else
+                    {
+                        Session["listaCarro"] = listaCarro;
+                    }
+
+
+                    if (listaCarro.Count > 0)
+                    {
+                        lblCarritoVacio.Visible = false;
+                        lblTextPrecio.Visible = true;
+                        lblPrecioFinal.Visible = true;
+
+                        if (Request.QueryString["cElim"] != null)
+                        {
+                            listaCarro = carroNegocio.EliminarArticulo(listaCarro, Request.QueryString["cElim"]);
+                        }
+                        else if (Request.QueryString["cArt"] != "")
+                        {
+                            listaCarro = carroNegocio.ModificarCantidad(listaCarro, Request.QueryString["cArt"], Request.QueryString["cant"]);
+                            Response.Redirect("Carrito.aspx?cArt=&cant=");
+                        }
+                        lblPrecioFinal.Text = carroNegocio.SumarImporte(listaCarro).ToString("F2");
+                        Session["listaCarro"] = listaCarro;
+                    }
                 }
-                
+                else
+                {
+                    Response.Redirect("Login.aspx",false);
+                    Context.ApplicationInstance.CompleteRequest(); //Tuve que agregarle esta linea que encontre en Stack Overflow porque me pinchaba al querer redireccionar sin haber terminado de cargar los componentes de la pagina.
+                }
             }
             catch (Exception ex)
             {

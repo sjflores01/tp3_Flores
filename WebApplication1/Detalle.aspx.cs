@@ -27,7 +27,6 @@ namespace WebApplication1
             }
             catch (Exception)
             {
-
                 Response.Redirect("Error.aspx");
             }
 

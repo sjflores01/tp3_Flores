@@ -18,16 +18,22 @@ namespace WebApplication1
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (txtBoxUsuario.Text == "" ||
-                txtBoxContraseña.Text == "")
+            try
             {
-                lblCompletar.Visible = true;
+                if (txtBoxUsuario.Text == "" ||
+                    txtBoxContraseña.Text == "")
+                {
+                    lblCompletar.Visible = true;
+                }
+                else
+                {
+                    Session["nombreUsuario"] = txtBoxUsuario.Text;
+                    Response.Redirect("Carrito.aspx");
+                }
             }
-            else
+            catch (Exception)
             {
-                
-                Session[Session.SessionID + "nombreUsuario"] = txtBoxUsuario.Text;
-                Response.Redirect("Home.aspx");
+                Response.Redirect("Error.aspx");
             }
         }
     }
